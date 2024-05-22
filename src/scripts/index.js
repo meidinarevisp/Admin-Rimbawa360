@@ -1,25 +1,17 @@
+import "regenerator-runtime";
 import "../styles/style.css";
+import App from "./views/app";
+import swRegister from "../utils/sw-register";
 
-// Memilih elemen carousel
-const carouselElement = document.querySelector("#ceritaCarousel");
+const app = new App({
+  content: document.querySelector("#mainContent"),
+});
 
-// Mengecek apakah elemen carousel ditemukan
-if (carouselElement) {
-  // Inisialisasi carousel dengan menggunakan Bootstrap
-  const carousel = new bootstrap.Carousel(carouselElement, {
-    pause: "hover", // Menjeda carousel saat kursor melayang di atasnya
-    interval: 5000, // Mengatur interval perpindahan slide menjadi 5 detik
-  });
+window.addEventListener("hashchange", () => {
+  app.renderPage();
+});
 
-  // Menambahkan event listener untuk tombol "Previous" dan "Next"
-  const prevButton = carouselElement.querySelector(".carousel-control-prev");
-  const nextButton = carouselElement.querySelector(".carousel-control-next");
-
-  prevButton.addEventListener("click", () => {
-    carousel.prev();
-  });
-
-  nextButton.addEventListener("click", () => {
-    carousel.next();
-  });
-}
+window.addEventListener("load", () => {
+  app.renderPage();
+  swRegister();
+});
