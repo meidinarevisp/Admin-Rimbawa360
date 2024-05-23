@@ -1,8 +1,8 @@
 {
-  "id": "rimbawa-360",
+  "id": "admin-rimbawa-360",
   "start_url": "/",
-  "name": "Rimbawa 360",
-  "short_name": "Rimbawa 360",
+  "name": "Admin Rimbawa 360",
+  "short_name": "Admin Rimbawa 360",
   "description": "A website focusing on forest conservation and wildlife in Indonesia.",
   "display": "standalone",
   "background_color": "#e8eedc",

@@ -10,17 +10,23 @@ body {
   padding: 50px 0;
   background-color: #e8eedc;
   position: relative;
+  overflow: hidden;
 }
 
-.dashboard-section::before {
-  content: "";
+.background-animate {
   position: absolute;
-  top: 0;
-  left: -30%;
+  top: 10px;
+  left: -55%;
   width: 50vw;
   height: 100%;
   background-color: #e8c614;
   border-radius: 0 100% 100% 0;
+  transform: translateX(-100%);
+}
+
+.dashboard-section .container {
+  position: relative;
+  z-index: 1;
 }
 
 .dashboard-section h1 {

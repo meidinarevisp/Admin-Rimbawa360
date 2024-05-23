@@ -1,10 +1,11 @@
 import UrlParser from "../../routes/url-parser";
-import { dashboardTemplate } from "../templates/template-creator";
+import { direktoriTemplate } from "../templates/template-creator";
+import direktoriData from "../../../data/Ekowisata.json";
 
 const Dashboard = {
   async render() {
     const urlParams = UrlParser.parseActiveUrlWithoutCombiner();
-    const renderedTemplate = dashboardTemplate(urlParams);
+    const renderedTemplate = direktoriTemplate(urlParams);
 
     return renderedTemplate;
   },
