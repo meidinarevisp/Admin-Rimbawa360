@@ -56,3 +56,259 @@ body {
   border: 2px solid #004225;
   color: #eeeeee;
 }
+
+.form-direktori {
+  width: 700px;
+  margin: 21px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.form-direktori .logo {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.form-direktori h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.form-direktori .form-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-direktori .form-column {
+  width: 48%;
+}
+
+.form-direktori .form-group {
+  margin-bottom: 15px;
+}
+
+.form-direktori label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-direktori input[type="text"],
+.form-direktori textarea,
+.form-direktori input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-direktori .buttons {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.form-direktori .btn-batal,
+.form-direktori .btn-simpan {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-direktori .btn-batal {
+  margin-right: 10px;
+  background-color: #e8eedc;
+  border: 1px solid #004225;
+  color: #004225;
+}
+
+.form-direktori .btn-batal:hover {
+  background-color: #004225;
+  border: 1px solid #004225;
+  color: #eeeeee;
+}
+
+.form-direktori .btn-simpan {
+  background-color: #004225;
+  border: 1px solid #004225;
+  color: #eeeeee;
+}
+
+.form-direktori .btn-simpan:hover {
+  background-color: #e8eedc;
+  border: 1px solid #004225;
+  color: #004225;
+}
+
+.form-edukasi {
+  width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.form-edukasi .logo {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.form-edukasi h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.form-edukasi .form-group {
+  margin-bottom: 15px;
+}
+
+.form-edukasi label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-edukasi input[type="text"],
+.form-edukasi textarea,
+.form-edukasi input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-edukasi .buttons {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.form-edukasi .btn-batal,
+.form-edukasi .btn-simpan {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-edukasi .btn-batal {
+  margin-right: 10px;
+  background-color: #e8eedc;
+  border: 1px solid #004225;
+  color: #004225;
+}
+
+.form-edukasi .btn-batal:hover {
+  background-color: #004225;
+  border: 1px solid #004225;
+  color: #eeeeee;
+}
+
+.form-edukasi .btn-simpan {
+  background-color: #004225;
+  border: 1px solid #004225;
+  color: #eeeeee;
+}
+
+.form-edukasi .btn-simpan:hover {
+  background-color: #e8eedc;
+  border: 1px solid #004225;
+  color: #004225;
+}
+
+.form-spesies {
+  width: 1000px;
+  margin: 23px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.form-spesies .logo {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.form-spesies h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.form-spesies .form-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-spesies .form-column {
+  width: 32%;
+}
+
+.form-spesies .form-group {
+  margin-bottom: 15px;
+}
+
+.form-spesies label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-spesies input[type="text"],
+.form-spesies textarea,
+.form-spesies input[type="file"],
+.form-spesies select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-spesies .buttons {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.form-spesies .btn-batal,
+.form-spesies .btn-simpan {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-spesies .btn-batal {
+  margin-right: 10px;
+  background-color: #e8eedc;
+  border: 1px solid #004225;
+  color: #004225;
+}
+
+.form-spesies .btn-batal:hover {
+  background-color: #004225;
+  border: 1px solid #004225;
+  color: #eeeeee;
+}
+
+.form-spesies .btn-simpan {
+  background-color: #004225;
+  border: 1px solid #004225;
+  color: #eeeeee;
+}
+
+.form-spesies .btn-simpan:hover {
+  background-color: #e8eedc;
+  border: 1px solid #004225;
+  color: #004225;
+}

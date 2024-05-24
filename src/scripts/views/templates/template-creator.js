@@ -28,13 +28,186 @@ const spesiesTemplate = () => `
   
 `;
 const formDirektoriTemplate = () => `
-  
+<section class="form-direktori">
+  <img src="rimbawa-360.png" alt="Logo Rimbawa 360" class="logo">
+  <h2>Form Direktori Ekowisata Hutan</h2>
+  <form>
+    <div class="form-container">
+      <div class="form-column">
+        <div class="form-group">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" required>
+        </div>
+        <div class="form-group">
+          <label for="lokasi">Lokasi:</label>
+          <input type="text" id="lokasi" name="lokasi" required>
+        </div>
+        <div class="form-group">
+          <label for="deskripsi">Deskripsi:</label>
+          <textarea class="mb-2" id="deskripsi" name="deskripsi" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="aktivitas">Aktivitas:</label>
+          <input type="text" id="aktivitas" name="aktivitas" required>
+        </div>
+      </div>
+      <div class="form-column">
+      <div class="form-group">
+          <label for="fasilitas">Fasilitas:</label>
+          <input type="text" id="fasilitas" name="fasilitas" required>
+        </div>
+        <div class="form-group">
+          <label for="akses">Akses:</label>
+          <input type="text" id="akses" name="akses" required>
+        </div>
+        <div class="form-group">
+          <label for="latitude">Latitude:</label>
+          <input type="text" id="latitude" name="latitude" required>
+        </div>
+        <div class="form-group">
+          <label for="longitude">Longitude:</label>
+          <input type="text" id="longitude" name="longitude" required>
+        </div>
+        <div class="form-group">
+          <label for="gambar">Gambar:</label>
+          <input type="file" id="gambar" name="gambar" accept="image/*" required>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="buttons">
+    <button type="button" class="btn-batal">Batal</button>
+    <button type="submit" class="btn-simpan">Simpan</button>
+  </div>
+</section>
 `;
 const formEdukasiTemplate = () => `
-  
+  <section class="form-edukasi">
+  <img src="rimbawa-360.png" alt="Logo Rimbawa 360" class="logo">
+  <h2>Form Edukasi</h2>
+  <form>
+    <div class="form-group">
+      <label for="judul">Judul:</label>
+      <input type="text" id="judul" name="judul" required>
+    </div>
+    <div class="form-group">
+      <label for="deskripsi">Deskripsi:</label>
+      <textarea id="deskripsi" name="deskripsi" rows="4" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="dampak">Dampak:</label>
+      <textarea id="dampak" name="dampak" rows="3" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="solusi">Solusi:</label>
+      <textarea id="solusi" name="solusi" rows="3" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="gambar">Gambar:</label>
+      <input type="file" id="gambar" name="gambar" accept="image/*" required>
+    </div>
+  </form>
+  <div class="buttons">
+    <button type="button" class="btn-batal">Batal</button>
+    <button type="submit" class="btn-simpan">Simpan</button>
+  </div>
+</section>
 `;
 const formSpesiesTemplate = () => `
-  
+  <section class="form-spesies">
+  <img src="rimbawa-360.png" alt="Logo Rimbawa 360" class="logo">
+  <h2>Form Direktori Ekowisata Hutan</h2>
+  <form>
+    <div class="form-container">
+      <div class="form-column">
+        <div class="form-group">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" required>
+        </div>
+        <div class="form-group">
+          <label for="deskripsi">Deskripsi:</label>
+          <textarea id="deskripsi" name="deskripsi" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="kerajaan">Kerajaan:</label>
+          <select id="kerajaan" name="kerajaan" required>
+            <option value="">Pilih jenis kerajaan</option>
+            <option value="Hutan Wisata">Hutan Wisata</option>
+            <option value="Taman Nasional">Taman Nasional</option>
+            <option value="Kebun Binatang">Kebun Binatang</option>
+            <option value="Kebun Raya">Kebun Raya</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="kelas">Kelas:</label>
+          <select id="kelas" name="kelas" required>
+            <option value="">Pilih jenis kelas</option>
+            <option value="Hutan Wisata">Hutan Wisata</option>
+            <option value="Taman Nasional">Taman Nasional</option>
+            <option value="Kebun Binatang">Kebun Binatang</option>
+            <option value="Kebun Raya">Kebun Raya</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-column">
+        <div class="form-group">
+          <label for="status-konservasi">Status Konservasi:</label>
+          <select id="status-konservasi" name="status-konservasi" required>
+            <option value="">Pilih jenis status konservasi</option>
+            <option value="Hutan Wisata">Hutan Wisata</option>
+            <option value="Taman Nasional">Taman Nasional</option>
+            <option value="Kebun Binatang">Kebun Binatang</option>
+            <option value="Kebun Raya">Kebun Raya</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="ordo">Ordo:</label>
+          <select id="ordo" name="ordo" required>
+            <option value="">Pilih jenis ordo</option>
+            <option value="Hutan Wisata">Hutan Wisata</option>
+            <option value="Taman Nasional">Taman Nasional</option>
+            <option value="Kebun Binatang">Kebun Binatang</option>
+            <option value="Kebun Raya">Kebun Raya</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="spesies">Spesies:</label>
+          <input type="text" id="spesies" name="spesies" required>
+        </div>
+        <div class="form-group">
+          <label for="populasi">Populasi:</label>
+          <input type="text" id="populasi" name="populasi" required>
+        </div>
+        <div class="form-group">
+          <label for="rentangan-hidup">Rentangan Hidup:</label>
+          <input type="text" id="rentangan-hidup" name="rentangan-hidup" required>
+        </div>
+      </div>
+      <div class="form-column">
+        <div class="form-group">
+          <label for="panjang">Panjang:</label>
+          <input type="text" id="panjang" name="panjang" required>
+        </div>
+        <div class="form-group">
+          <label for="berat">Berat:</label>
+          <input type="text" id="berat" name="berat" required>
+        </div>
+        <div class="form-group">
+          <label for="kecepatan-tertinggi">Kecepatan Tertinggi:</label>
+          <input type="text" id="kecepatan-tertinggi" name="kecepatan-tertinggi" required>
+        </div>
+        <div class="form-group">
+          <label for="gambar">Gambar:</label>
+          <input type="file" id="gambar" name="gambar" accept="image/*" required>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="buttons">
+    <button type="button" class="btn-batal">Batal</button>
+    <button type="submit" class="btn-simpan">Simpan</button>
+  </div>
+</section>
 `;
 
 export {
