@@ -19,7 +19,28 @@ const dashboardTemplate = () => `
 </section>
 `;
 const direktoriTemplate = () => `
-  
+<section class="direktori">
+   <div class="container mt-4">
+        <div class="row">
+            <div class="col-10">
+                <img src="rimbawa-360.png" alt="Logo Rimbawa 360" class="logo" />
+                <div class="dropdown d-flex justify-content-between align-items-center">
+                    <h1 class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Direktori Ekowisata Hutan
+                    </h1>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="/#/edukasi">Edukasi</a></li>
+                        <li><a class="dropdown-item" href="/#/spesies">Spesies</a></li>
+                    </ul>
+                    <button class="btn btn-tambah rounded-circle"><i class="fas fa-plus"></i></button>
+                </div>
+                <section id="direktori" class="mt-4">
+                    <!-- Daftar direktori ekowisata akan dimuat di sini -->
+                </section>
+            </div>
+        </div>
+    </div>
+    </section>
 `;
 const edukasiTemplate = () => `
   

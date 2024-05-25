@@ -312,3 +312,98 @@ body {
   border: 1px solid #004225;
   color: #004225;
 }
+
+.direktori {
+  padding: 10px;
+  background-color: #f6f2f2;
+  padding-bottom: 30px;
+}
+
+.direktori h1 {
+  margin-left: 200px;
+  font-size: 2.5rem;
+}
+
+.direktori .dropdown-menu {
+  background-color: #f6f2f2;
+  border: none;
+  width: 50%;
+}
+
+.direktori .dropdown-item {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+#direktori {
+  margin-left: 200px;
+  background-color: #e8eedc;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+#direktori .card {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #004225;
+  color: #eeeeee;
+  border-radius: 10px;
+  height: 160px;
+}
+
+#direktori .card img {
+  width: 200px;
+  height: 160px;
+  object-fit: fill;
+}
+
+.direktori .logo {
+  position: absolute;
+  top: 30px;
+  left: 220px;
+  width: 80px;
+  height: auto;
+}
+
+.direktori .btn-tambah {
+  background-color: #004225;
+  color: #eeeeee;
+  border: 2px solid #004225;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+.direktori .btn-tambah:hover {
+  background-color: #e8eedc;
+  color: #004225;
+  border: 2px solid #004225;
+}
+
+#direktori .btn-edit,
+#direktori .btn-hapus {
+  background-color: #004225;
+  color: #eeeeee;
+  border: 1px solid #e8eedc;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem;
+}
+
+#direktori .btn-edit:hover,
+#direktori .btn-hapus:hover {
+  background-color: #e8eedc;
+  color: #004225;
+}
+
+#direktori .card-title {
+  margin-left: -60px;
+  font-size: 1.8rem;
+}
+
+#direktori .card-text {
+  margin-left: -60px;
+}
