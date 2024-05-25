@@ -1,10 +1,10 @@
 import UrlParser from "../../routes/url-parser";
-import { formEdukasiTemplate } from "../templates/template-creator";
+import { editFormSpesiesTemplate } from "../templates/template-creator";
 
-const formEdukasi = {
+const editFormSpesies = {
   async render() {
     const urlParams = UrlParser.parseActiveUrlWithoutCombiner();
-    const renderedTemplate = formEdukasiTemplate(urlParams);
+    const renderedTemplate = editFormSpesiesTemplate(urlParams);
 
     return renderedTemplate;
   },
@@ -12,4 +12,4 @@ const formEdukasi = {
   async afterRender() {},
 };
 
-export default formEdukasi;
+export default editFormSpesies;

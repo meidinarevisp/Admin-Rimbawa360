@@ -601,3 +601,180 @@ body {
   margin-left: -25px;
   color: #e8c614;
 }
+
+.edit-form-direktori {
+  width: 800px;
+  margin: 21px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.edit-form-direktori .logo {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.edit-form-direktori h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.edit-form-direktori .form-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-form-direktori .form-column {
+  width: 48%;
+}
+
+.edit-form-direktori .form-group {
+  margin-bottom: 15px;
+}
+
+.edit-form-direktori label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.edit-form-direktori input[type="text"],
+.edit-form-direktori textarea,
+.edit-form-direktori input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.edit-form-direktori .buttons {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.edit-form-direktori .btn-batal,
+.edit-form-direktori .btn-simpan {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-form-direktori .btn-batal {
+  margin-right: 10px;
+  background-color: #e8eedc;
+  border: 1px solid #004225;
+  color: #004225;
+}
+
+.edit-form-direktori .btn-batal:hover {
+  background-color: #004225;
+  border: 1px solid #004225;
+  color: #eeeeee;
+}
+
+.edit-form-direktori .btn-simpan {
+  background-color: #004225;
+  border: 1px solid #004225;
+  color: #eeeeee;
+}
+
+.edit-form-direktori .btn-simpan:hover {
+  background-color: #e8eedc;
+  border: 1px solid #004225;
+  color: #004225;
+}
+
+.edit-form-spesies {
+  width: 1000px;
+  margin: 23px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.edit-form-spesies .logo {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.edit-form-spesies h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.edit-form-spesies .form-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-form-spesies .form-column {
+  width: 32%;
+}
+
+.edit-form-spesies .form-group {
+  margin-bottom: 15px;
+}
+
+.edit-form-spesies label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.edit-form-spesies input[type="text"],
+.edit-form-spesies textarea,
+.edit-form-spesies input[type="file"],
+.edit-form-spesies select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.edit-form-spesies .buttons {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.edit-form-spesies .btn-batal,
+.edit-form-spesies .btn-simpan {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-form-spesies .btn-batal {
+  margin-right: 10px;
+  background-color: #e8eedc;
+  border: 1px solid #004225;
+  color: #004225;
+}
+
+.edit-form-spesies .btn-batal:hover {
+  background-color: #004225;
+  border: 1px solid #004225;
+  color: #eeeeee;
+}
+
+.edit-form-spesies .btn-simpan {
+  background-color: #004225;
+  border: 1px solid #004225;
+  color: #eeeeee;
+}
+
+.edit-form-spesies .btn-simpan:hover {
+  background-color: #e8eedc;
+  border: 1px solid #004225;
+  color: #004225;
+}

@@ -31,7 +31,7 @@ const Edukasi = {
                             <h5 class="card-title">${item.nama_isu}</h5>
                             <p class="card-text">${truncatedDeskripsi}</p>
                             <div class="d-flex justify-content-end">
-                                <button class="btn btn-edit rounded-circle me-2"><i class="fas fa-edit"></i></button>
+                                <a href="/#/edit-form-edukasi"><button class="btn btn-edit rounded-circle me-2"><i class="fas fa-edit"></i></button></a>
                             </div>
                         </div>
                     </div>

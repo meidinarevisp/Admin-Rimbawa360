@@ -27,7 +27,7 @@ const Spesies = {
                             <h5 class="card-title">${item.namaHewan}</h5>
                             <p class="card-text">${item.statusKonservasi}</p>
                             <div class="d-flex justify-content-end">
-                                <button class="btn btn-edit rounded-circle me-2"><i class="fas fa-edit"></i></button>
+                                <a href="/#/edit-form-spesies"><button class="btn btn-edit rounded-circle me-2"><i class="fas fa-edit"></i></button></a>
                                 <button class="btn btn-hapus rounded-circle"><i class="fas fa-trash-alt"></i></button>
                             </div>
                         </div>
