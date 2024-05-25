@@ -192,21 +192,44 @@ const formSpesiesTemplate = () => `
           <label for="kerajaan">Kerajaan:</label>
           <select id="kerajaan" name="kerajaan" required>
             <option value="">Pilih jenis kerajaan</option>
-            <option value="Hutan Wisata">Hutan Wisata</option>
-            <option value="Taman Nasional">Taman Nasional</option>
-            <option value="Kebun Binatang">Kebun Binatang</option>
-            <option value="Kebun Raya">Kebun Raya</option>
+            <option value="Animalia">Animalia</option>
+            <option value="Plantae">Plantae</option>
+            <option value="Fungi">Fungi</option>
+            <option value="Protista">Protista</option>
+            <option value="Archaea">Archaea</option>
+            <option value="Bacteria">Bacteria</option>
           </select>
         </div>
         <div class="form-group">
           <label for="kelas">Kelas:</label>
           <select id="kelas" name="kelas" required>
             <option value="">Pilih jenis kelas</option>
-            <option value="Hutan Wisata">Hutan Wisata</option>
-            <option value="Taman Nasional">Taman Nasional</option>
-            <option value="Kebun Binatang">Kebun Binatang</option>
-            <option value="Kebun Raya">Kebun Raya</option>
-          </select>
+            <!-- Kerajaan Hewan -->
+            <option value="Mammalia">Mammalia</option>
+            <option value="Aves">Aves</option>
+            <option value="Reptilia">Reptilia</option>
+            <option value="Amphibia">Amphibia</option>
+            <option value="Actinopterygii">Actinopterygii</option>
+            <option value="Insecta">Insecta</option>
+            <option value="Arachnida">Arachnida</option>
+            <!-- Kerajaan Tumbuhan -->
+            <option value="Magnoliopsida">Magnoliopsida (Dikotil)</option>
+            <option value="Liliopsida">Liliopsida (Monokotil)</option>
+            <option value="Bryopsida">Bryopsida (Lumut Daun)</option>
+            <option value="Pteridopsida">Pteridopsida (Pakis)</option>
+            <!-- Kerajaan Jamur -->
+            <option value="Ascomycota">Ascomycota (Jamur Kantung)</option>
+            <option value="Basidiomycota">Basidiomycota (Jamur Basidium)</option>
+            <!-- Kerajaan Protista -->
+            <option value="Chlorophyta">Chlorophyta (Alga Hijau)</option>
+            <option value="Ciliophora">Ciliophora (Ciliata)</option>
+            <!-- Kerajaan Archaea -->
+            <option value="Euryarchaeota">Euryarchaeota</option>
+            <option value="Crenarchaeota">Crenarchaeota</option>
+            <!-- Kerajaan Bacteria -->
+            <option value="Proteobacteria">Proteobacteria</option>
+            <option value="Firmicutes">Firmicutes</option>
+        </select>
         </div>
       </div>
       <div class="form-column">
@@ -214,21 +237,48 @@ const formSpesiesTemplate = () => `
           <label for="status-konservasi">Status Konservasi:</label>
           <select id="status-konservasi" name="status-konservasi" required>
             <option value="">Pilih jenis status konservasi</option>
-            <option value="Hutan Wisata">Hutan Wisata</option>
-            <option value="Taman Nasional">Taman Nasional</option>
-            <option value="Kebun Binatang">Kebun Binatang</option>
-            <option value="Kebun Raya">Kebun Raya</option>
+            <option value="Punah">Extinct (EX) - Punah</option>
+            <option value="Punah di Alam Liar">Extinct in the Wild (EW) - Punah di Alam Liar</option>
+            <option value="Kritis">Critically Endangered (CR) - Kritis</option>
+            <option value="Terancam">Endangered (EN) - Terancam</option>
+            <option value="Rentan">Vulnerable (VU) - Rentan</option>
+            <option value="Hampir Terancam">Near Threatened (NT) - Hampir Terancam</option>
+            <option value="Risiko Rendah">Least Concern (LC) - Risiko Rendah</option>
+            <option value="Data Kurang">Data Deficient (DD) - Data Kurang</option>
+            <option value="Belum Dievaluasi">Not Evaluated (NE) - Belum Dievaluasi</option>
           </select>
         </div>
         <div class="form-group">
           <label for="ordo">Ordo:</label>
           <select id="ordo" name="ordo" required>
             <option value="">Pilih jenis ordo</option>
-            <option value="Hutan Wisata">Hutan Wisata</option>
-            <option value="Taman Nasional">Taman Nasional</option>
-            <option value="Kebun Binatang">Kebun Binatang</option>
-            <option value="Kebun Raya">Kebun Raya</option>
-          </select>
+            <!-- Mamalia -->
+            <option value="Primates">Primates</option>
+            <option value="Carnivora">Carnivora</option>
+            <option value="Cetacea">Cetacea</option>
+            <option value="Rodentia">Rodentia</option>
+            <option value="Chiroptera">Chiroptera</option>
+            <!-- Aves -->
+            <option value="Passeriformes">Passeriformes</option>
+            <option value="Accipitriformes">Accipitriformes</option>
+            <option value="Strigiformes">Strigiformes</option>
+            <option value="Anseriformes">Anseriformes</option>
+            <option value="Psittaciformes">Psittaciformes</option>
+            <!-- Reptilia -->
+            <option value="Squamata">Squamata</option>
+            <option value="Testudines">Testudines</option>
+            <option value="Crocodylia">Crocodylia</option>
+            <!-- Amphibia -->
+            <option value="Anura">Anura</option>
+            <option value="Caudata">Caudata</option>
+            <option value="Gymnophiona">Gymnophiona</option>
+            <!-- Insecta -->
+            <option value="Coleoptera">Coleoptera</option>
+            <option value="Lepidoptera">Lepidoptera</option>
+            <option value="Diptera">Diptera</option>
+            <option value="Hymenoptera">Hymenoptera</option>
+            <option value="Orthoptera">Orthoptera</option>
+        </select>
         </div>
         <div class="form-group">
           <label for="spesies">Spesies:</label>
