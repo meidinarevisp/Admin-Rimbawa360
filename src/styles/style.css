@@ -517,3 +517,105 @@ body {
   margin-left: -40px;
   color: #e8c614;
 }
+
+.spesies-section {
+  padding: 10px;
+  background-color: #f6f2f2;
+  padding-bottom: 30px;
+}
+
+.spesies-section h1 {
+  margin-left: 200px;
+  font-size: 2.5rem;
+}
+
+.spesies-section .dropdown-menu {
+  background-color: #f6f2f2;
+  border: none;
+  width: 50%;
+}
+
+.spesies-section .dropdown-item {
+  font-size: 2.2rem;
+  font-weight: 400;
+  background-color: #f6f2f2;
+  color: #373636;
+}
+
+.spesies-section .dropdown-item:hover {
+  color: #56ab2e;
+}
+
+#spesies-section {
+  margin-left: 200px;
+  background-color: #e8eedc;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+#spesies-section .card {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #004225;
+  color: #eeeeee;
+  border-radius: 10px;
+  height: 160px;
+}
+
+#spesies-section .card img {
+  width: 240px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.spesies-section .logo {
+  position: absolute;
+  top: 30px;
+  left: 220px;
+  width: 80px;
+  height: auto;
+}
+
+.spesies-section .btn-tambah {
+  background-color: #004225;
+  color: #eeeeee;
+  border: 2px solid #004225;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+.spesies-section .btn-tambah:hover {
+  background-color: #e8eedc;
+  color: #004225;
+  border: 2px solid #004225;
+}
+
+#spesies-section .btn-edit,
+#spesies-section .btn-hapus {
+  background-color: #004225;
+  color: #eeeeee;
+  border: 1px solid #e8eedc;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem;
+}
+
+#spesies-section .btn-edit:hover,
+#spesies-section .btn-hapus:hover {
+  background-color: #e8eedc;
+  color: #004225;
+}
+
+#spesies-section .card-title {
+  margin-left: -25px;
+  font-size: 1.8rem;
+}
+
+#spesies-section .card-text {
+  margin-left: -25px;
+  color: #e8c614;
+}

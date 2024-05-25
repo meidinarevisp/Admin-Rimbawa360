@@ -65,14 +65,14 @@ const edukasiTemplate = () => `
     </section>
 `;
 const spesiesTemplate = () => `
-  <section class="spesies">
+  <section class="spesies-section">
    <div class="container mt-4">
         <div class="row">
             <div class="col-10">
                 <img src="rimbawa-360.png" alt="Logo Rimbawa 360" class="logo" />
                 <div class="dropdown d-flex justify-content-between align-items-center">
                     <h1 class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Edukasi
+                        Spesies
                     </h1>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item" href="/#/direktori">Direktori Ekowisata Hutan</a></li>
@@ -80,7 +80,7 @@ const spesiesTemplate = () => `
                     </ul>
                     <a href="/#/form-spesies"><button class="btn btn-tambah rounded-circle"><i class="fas fa-plus"></i></button></a>
                 </div>
-                <section id="spesies" class="mt-4">
+                <section id="spesies-section" class="mt-4">
                 </section>
             </div>
         </div>
