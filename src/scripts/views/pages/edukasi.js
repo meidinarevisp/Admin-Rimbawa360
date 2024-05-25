@@ -32,7 +32,6 @@ const Edukasi = {
                             <p class="card-text">${truncatedDeskripsi}</p>
                             <div class="d-flex justify-content-end">
                                 <button class="btn btn-edit rounded-circle me-2"><i class="fas fa-edit"></i></button>
-                                <button class="btn btn-hapus rounded-circle"><i class="fas fa-trash-alt"></i></button>
                             </div>
                         </div>
                     </div>

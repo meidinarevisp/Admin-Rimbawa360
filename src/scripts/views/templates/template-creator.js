@@ -55,7 +55,6 @@ const edukasiTemplate = () => `
                         <li><a class="dropdown-item" href="/#/direktori">Direktori Ekowisata Hutan</a></li>
                         <li><a class="dropdown-item" href="/#/spesies">Spesies</a></li>
                     </ul>
-                    <a href="/#/form-edukasi"><button class="btn btn-tambah rounded-circle"><i class="fas fa-plus"></i></button></a>
                 </div>
                 <section id="edukasi" class="mt-4">
                 </section>
