@@ -1,26 +1,25 @@
-import UrlParser from "../../routes/url-parser";
-import { edukasiTemplate } from "../templates/template-creator";
-import edukasiData from "../../../data/Edukasi.json";
+import UrlParser from '../../routes/url-parser'
+import { edukasiTemplate } from '../templates/template-creator'
+import edukasiData from '../../../data/Edukasi.json'
 
 const Edukasi = {
   async render() {
-    const urlParams = UrlParser.parseActiveUrlWithoutCombiner();
-    const renderedTemplate = edukasiTemplate(urlParams);
+    const urlParams = UrlParser.parseActiveUrlWithoutCombiner()
+    const renderedTemplate = edukasiTemplate(urlParams)
 
-    return renderedTemplate;
+    return renderedTemplate
   },
 
   async afterRender() {
-    const edukasiContainer = document.querySelector("#edukasi");
-    const data = edukasiData.edukasi_dan_kesadaran_lingkungan_hutan;
+    const edukasiContainer = document.querySelector('#edukasi')
+    const data = edukasiData.edukasi_dan_kesadaran_lingkungan_hutan
 
     data.forEach((item) => {
-      const truncatedDeskripsi =
-        item.deskripsi.length > 150
-          ? item.deskripsi.substring(0, 100) + "..."
-          : item.deskripsi;
-      const itemElement = document.createElement("div");
-      itemElement.classList.add("card", "mb-3");
+      const truncatedDeskripsi = item.deskripsi.length > 150
+        ? `${item.deskripsi.substring(0, 100)}...`
+        : item.deskripsi
+      const itemElement = document.createElement('div')
+      itemElement.classList.add('card', 'mb-3')
       itemElement.innerHTML = `
                 <div class="row g-0">
                     <div class="col-md-4">
@@ -37,10 +36,10 @@ const Edukasi = {
                         </div>
                     </div>
                 </div>
-            `;
-      edukasiContainer.appendChild(itemElement);
-    });
-  },
-};
+            `
+      edukasiContainer.appendChild(itemElement)
+    })
+  }
+}
 
-export default Edukasi;
+export default Edukasi

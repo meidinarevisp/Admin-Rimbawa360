@@ -1,15 +1,15 @@
-import UrlParser from "../../routes/url-parser";
-import { formDirektoriTemplate } from "../templates/template-creator";
+import UrlParser from '../../routes/url-parser'
+import { formDirektoriTemplate } from '../templates/template-creator'
 
 const formDirektori = {
   async render() {
-    const urlParams = UrlParser.parseActiveUrlWithoutCombiner();
-    const renderedTemplate = formDirektoriTemplate(urlParams);
+    const urlParams = UrlParser.parseActiveUrlWithoutCombiner()
+    const renderedTemplate = formDirektoriTemplate(urlParams)
 
-    return renderedTemplate;
+    return renderedTemplate
   },
 
-  async afterRender() {},
-};
+  async afterRender() {}
+}
 
-export default formDirektori;
+export default formDirektori

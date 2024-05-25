@@ -32,7 +32,7 @@ const direktoriTemplate = () => `
                         <li><a class="dropdown-item" href="/#/edukasi">Edukasi</a></li>
                         <li><a class="dropdown-item" href="/#/spesies">Spesies</a></li>
                     </ul>
-                    <button class="btn btn-tambah rounded-circle"><i class="fas fa-plus"></i></button>
+                    <a href="/#/form-direktori"><button class="btn btn-tambah rounded-circle"><i class="fas fa-plus"></i></button></a>
                 </div>
                 <section id="direktori" class="mt-4">
                 </section>
@@ -55,7 +55,7 @@ const edukasiTemplate = () => `
                         <li><a class="dropdown-item" href="/#/direktori">Direktori Ekowisata Hutan</a></li>
                         <li><a class="dropdown-item" href="/#/spesies">Spesies</a></li>
                     </ul>
-                    <button class="btn btn-tambah rounded-circle"><i class="fas fa-plus"></i></button>
+                    <a href="/#/form-edukasi"><button class="btn btn-tambah rounded-circle"><i class="fas fa-plus"></i></button></a>
                 </div>
                 <section id="edukasi" class="mt-4">
                 </section>
@@ -78,7 +78,7 @@ const spesiesTemplate = () => `
                         <li><a class="dropdown-item" href="/#/direktori">Direktori Ekowisata Hutan</a></li>
                         <li><a class="dropdown-item" href="/#/edukasi">Edukasi</a></li>
                     </ul>
-                    <button class="btn btn-tambah rounded-circle"><i class="fas fa-plus"></i></button>
+                    <a href="/#/form-spesies"><button class="btn btn-tambah rounded-circle"><i class="fas fa-plus"></i></button></a>
                 </div>
                 <section id="spesies" class="mt-4">
                 </section>
@@ -136,7 +136,7 @@ const formDirektoriTemplate = () => `
     </div>
   </form>
   <div class="buttons">
-    <button type="button" class="btn-batal">Batal</button>
+    <a href="/#/direktori"><button type="button" class="btn-batal">Batal</button></a>
     <button type="submit" class="btn-simpan">Simpan</button>
   </div>
 </section>
@@ -168,7 +168,7 @@ const formEdukasiTemplate = () => `
     </div>
   </form>
   <div class="buttons">
-    <button type="button" class="btn-batal">Batal</button>
+    <a href="/#/edukasi"><button type="button" class="btn-batal">Batal</button></a>
     <button type="submit" class="btn-simpan">Simpan</button>
   </div>
 </section>
@@ -264,7 +264,7 @@ const formSpesiesTemplate = () => `
     </div>
   </form>
   <div class="buttons">
-    <button type="button" class="btn-batal">Batal</button>
+    <a href="/#/spesies"><button type="button" class="btn-batal">Batal</button></a>
     <button type="submit" class="btn-simpan">Simpan</button>
   </div>
 </section>

@@ -333,6 +333,12 @@ body {
 .direktori .dropdown-item {
   font-size: 2.2rem;
   font-weight: 400;
+  background-color: #f6f2f2;
+  color: #373636;
+}
+
+.direktori .dropdown-item:hover {
+  color: #56ab2e;
 }
 
 #direktori {
@@ -355,7 +361,7 @@ body {
 #direktori .card img {
   width: 200px;
   height: 160px;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .direktori .logo {
@@ -406,6 +412,8 @@ body {
 
 #direktori .card-text {
   margin-left: -60px;
+  color: #e8c614;
+  font-size: 1.2rem;
 }
 
 .edukasi {
@@ -428,6 +436,12 @@ body {
 .edukasi .dropdown-item {
   font-size: 2.2rem;
   font-weight: 400;
+  background-color: #f6f2f2;
+  color: #373636;
+}
+
+.edukasi .dropdown-item:hover {
+  color: #56ab2e;
 }
 
 #edukasi {
@@ -501,4 +515,5 @@ body {
 
 #edukasi .card-text {
   margin-left: -40px;
+  color: #e8c614;
 }
