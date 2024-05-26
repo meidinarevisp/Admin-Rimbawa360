@@ -521,6 +521,42 @@ const editFormSpesiesTemplate = () => `
 </section>
 `;
 
+const loginTemplate = () => `
+<section class="login-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card p-4">
+          <div class="card-body">
+            <h2 class="text-center">Login Admin</h2>
+            <form>
+              <div class="form-group mb-3">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Masukkan username" required>
+              </div>
+              <div class="form-group mb-3">
+                <label for="password">Password</label>
+                <div class="input-group">
+                  <input type="password" class="form-control" id="password" placeholder="Masukkan password" required>
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span id="showPasswordIcon" class="fa fa-eye"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-login">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
 export {
   dashboardTemplate,
   direktoriTemplate,
@@ -531,4 +567,5 @@ export {
   formSpesiesTemplate,
   editFormDirektoriTemplate,
   editFormSpesiesTemplate,
+  loginTemplate,
 };

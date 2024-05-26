@@ -1,3 +1,4 @@
+import Login from "../views/pages/login";
 import Dashboard from "../views/pages/dashboard";
 import Direktori from "../views/pages/direktori";
 import Edukasi from "../views/pages/edukasi";
@@ -9,7 +10,8 @@ import editFormSpesies from "../views/pages/edit-form-spesies";
 import editFormDirektori from "../views/pages/edit-form-direktori";
 
 const routes = {
-  "/": Dashboard,
+  "/": Login,
+  "/dashboard": Dashboard,
   "/direktori": Direktori,
   "/edukasi": Edukasi,
   "/spesies": Spesies,

@@ -5,17 +5,89 @@ body {
   overflow-x: hidden;
 }
 
+.login-section {
+  margin-top: 130px;
+  padding: 50px 0;
+}
+
+.login-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+}
+
+.login-logo {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 120px;
+  height: auto;
+}
+
+.login-section .card {
+  background-color: rgba(231, 228, 228, 0.722);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 10px;
+}
+
+.login-section h2 {
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #56ab2e;
+}
+
+.login-section label {
+  margin-bottom: 8px;
+  color: #4d4d4d !important;
+}
+
+.login-section ::placeholder {
+  color: #9f9d9d;
+}
+
+.btn-login {
+  margin-top: 20px;
+  background-color: #004225;
+  border: 2px solid #004225;
+  color: #eeeeee;
+}
+
+.btn-login:hover {
+  background-color: rgba(231, 228, 228, 0.722);
+  border: 2px solid #004225;
+  color: #004225;
+}
+
+.input-group-append {
+  cursor: pointer;
+}
+
+.fa-eye,
+.fa-eye-slash {
+  font-size: 1.5rem;
+  color: #858383;
+}
+
 /* Styling for Dashboard Section */
 .dashboard-section {
-  padding: 50px 0;
+  padding: 60px 0;
   background-color: #e8eedc;
   position: relative;
   overflow: hidden;
+  z-index: 2;
 }
 
 .background-animate {
   position: absolute;
-  top: 10px;
+  top: -2px;
   left: -55%;
   width: 50vw;
   height: 100%;
