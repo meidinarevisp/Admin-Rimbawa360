@@ -1,7 +1,7 @@
 import UrlParser from "../../routes/url-parser";
 import { loginTemplate } from "../templates/template-creator";
 import loginImage from "../../../public/images/login.png";
-import logoImage from "../../../public/rimbawa-360.png"; // Tambahkan logo image
+import logoImage from "../../../public/rimbawa-360.png";
 
 const Login = {
   async render() {
@@ -28,12 +28,9 @@ const Login = {
       const username = document.getElementById("username").value;
       const password = document.getElementById("password").value;
 
-      // Contoh validasi sederhana, bisa diganti dengan yang lebih aman
       if (username === "admin" && password === "rimbawa360") {
-        // Login berhasil, arahkan pengguna ke dashboard
-        window.location.href = "/#/dashboard"; // Ganti dengan URL dashboard Anda
+        window.location.href = "/#/dashboard";
       } else {
-        // Login gagal, beri pesan kesalahan atau tindakan yang sesuai
         alert("Login failed. Please check your username and password.");
       }
     });

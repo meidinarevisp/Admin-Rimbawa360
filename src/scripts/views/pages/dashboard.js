@@ -3,7 +3,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import UrlParser from "../../routes/url-parser";
 import { dashboardTemplate } from "../templates/template-creator";
 
-// Register the plugins
 gsap.registerPlugin(ScrollTrigger);
 
 const Dashboard = {
@@ -14,14 +13,12 @@ const Dashboard = {
   },
 
   async afterRender() {
-    // Background animation
     gsap.to(".background-animate", {
       duration: 1,
       x: "40%",
       ease: "power2.out",
     });
 
-    // Element animations
     gsap.from(".dashboard-section h1", {
       duration: 1,
       opacity: 0,
@@ -47,11 +44,9 @@ const Dashboard = {
       ease: "power2.out",
     });
 
-    // Button animations
     const buttons = document.querySelectorAll(".btn-dashboard");
 
     buttons.forEach((button) => {
-      // Hover animation
       button.addEventListener("mouseenter", () => {
         gsap.to(button.querySelector(".btn-inner"), {
           duration: 0.3,
@@ -68,7 +63,6 @@ const Dashboard = {
         });
       });
 
-      // Click animation
       button.addEventListener("mousedown", () => {
         gsap.to(button, {
           duration: 0.2,

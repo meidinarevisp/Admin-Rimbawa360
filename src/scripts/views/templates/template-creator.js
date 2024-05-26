@@ -203,7 +203,6 @@ const formSpesiesTemplate = () => `
           <label for="kelas">Kelas:</label>
           <select id="kelas" name="kelas" required>
             <option value="">Pilih jenis kelas</option>
-            <!-- Kerajaan Hewan -->
             <option value="Mammalia">Mammalia</option>
             <option value="Aves">Aves</option>
             <option value="Reptilia">Reptilia</option>
@@ -211,21 +210,16 @@ const formSpesiesTemplate = () => `
             <option value="Actinopterygii">Actinopterygii</option>
             <option value="Insecta">Insecta</option>
             <option value="Arachnida">Arachnida</option>
-            <!-- Kerajaan Tumbuhan -->
             <option value="Magnoliopsida">Magnoliopsida (Dikotil)</option>
             <option value="Liliopsida">Liliopsida (Monokotil)</option>
             <option value="Bryopsida">Bryopsida (Lumut Daun)</option>
             <option value="Pteridopsida">Pteridopsida (Pakis)</option>
-            <!-- Kerajaan Jamur -->
             <option value="Ascomycota">Ascomycota (Jamur Kantung)</option>
             <option value="Basidiomycota">Basidiomycota (Jamur Basidium)</option>
-            <!-- Kerajaan Protista -->
             <option value="Chlorophyta">Chlorophyta (Alga Hijau)</option>
             <option value="Ciliophora">Ciliophora (Ciliata)</option>
-            <!-- Kerajaan Archaea -->
             <option value="Euryarchaeota">Euryarchaeota</option>
             <option value="Crenarchaeota">Crenarchaeota</option>
-            <!-- Kerajaan Bacteria -->
             <option value="Proteobacteria">Proteobacteria</option>
             <option value="Firmicutes">Firmicutes</option>
         </select>
@@ -251,27 +245,22 @@ const formSpesiesTemplate = () => `
           <label for="ordo">Ordo:</label>
           <select id="ordo" name="ordo" required>
             <option value="">Pilih jenis ordo</option>
-            <!-- Mamalia -->
             <option value="Primates">Primates</option>
             <option value="Carnivora">Carnivora</option>
             <option value="Cetacea">Cetacea</option>
             <option value="Rodentia">Rodentia</option>
             <option value="Chiroptera">Chiroptera</option>
-            <!-- Aves -->
             <option value="Passeriformes">Passeriformes</option>
             <option value="Accipitriformes">Accipitriformes</option>
             <option value="Strigiformes">Strigiformes</option>
             <option value="Anseriformes">Anseriformes</option>
             <option value="Psittaciformes">Psittaciformes</option>
-            <!-- Reptilia -->
             <option value="Squamata">Squamata</option>
             <option value="Testudines">Testudines</option>
             <option value="Crocodylia">Crocodylia</option>
-            <!-- Amphibia -->
             <option value="Anura">Anura</option>
             <option value="Caudata">Caudata</option>
             <option value="Gymnophiona">Gymnophiona</option>
-            <!-- Insecta -->
             <option value="Coleoptera">Coleoptera</option>
             <option value="Lepidoptera">Lepidoptera</option>
             <option value="Diptera">Diptera</option>
@@ -405,7 +394,6 @@ const editFormSpesiesTemplate = () => `
           <label for="kelas">Kelas:</label>
           <select id="kelas" name="kelas" required>
             <option value="">Pilih jenis kelas</option>
-            <!-- Kerajaan Hewan -->
             <option value="Mammalia">Mammalia</option>
             <option value="Aves">Aves</option>
             <option value="Reptilia">Reptilia</option>
@@ -413,21 +401,16 @@ const editFormSpesiesTemplate = () => `
             <option value="Actinopterygii">Actinopterygii</option>
             <option value="Insecta">Insecta</option>
             <option value="Arachnida">Arachnida</option>
-            <!-- Kerajaan Tumbuhan -->
             <option value="Magnoliopsida">Magnoliopsida (Dikotil)</option>
             <option value="Liliopsida">Liliopsida (Monokotil)</option>
             <option value="Bryopsida">Bryopsida (Lumut Daun)</option>
             <option value="Pteridopsida">Pteridopsida (Pakis)</option>
-            <!-- Kerajaan Jamur -->
             <option value="Ascomycota">Ascomycota (Jamur Kantung)</option>
             <option value="Basidiomycota">Basidiomycota (Jamur Basidium)</option>
-            <!-- Kerajaan Protista -->
             <option value="Chlorophyta">Chlorophyta (Alga Hijau)</option>
             <option value="Ciliophora">Ciliophora (Ciliata)</option>
-            <!-- Kerajaan Archaea -->
             <option value="Euryarchaeota">Euryarchaeota</option>
             <option value="Crenarchaeota">Crenarchaeota</option>
-            <!-- Kerajaan Bacteria -->
             <option value="Proteobacteria">Proteobacteria</option>
             <option value="Firmicutes">Firmicutes</option>
         </select>
@@ -453,27 +436,22 @@ const editFormSpesiesTemplate = () => `
           <label for="ordo">Ordo:</label>
           <select id="ordo" name="ordo" required>
             <option value="">Pilih jenis ordo</option>
-            <!-- Mamalia -->
             <option value="Primates">Primates</option>
             <option value="Carnivora">Carnivora</option>
             <option value="Cetacea">Cetacea</option>
             <option value="Rodentia">Rodentia</option>
             <option value="Chiroptera">Chiroptera</option>
-            <!-- Aves -->
             <option value="Passeriformes">Passeriformes</option>
             <option value="Accipitriformes">Accipitriformes</option>
             <option value="Strigiformes">Strigiformes</option>
             <option value="Anseriformes">Anseriformes</option>
             <option value="Psittaciformes">Psittaciformes</option>
-            <!-- Reptilia -->
             <option value="Squamata">Squamata</option>
             <option value="Testudines">Testudines</option>
             <option value="Crocodylia">Crocodylia</option>
-            <!-- Amphibia -->
             <option value="Anura">Anura</option>
             <option value="Caudata">Caudata</option>
             <option value="Gymnophiona">Gymnophiona</option>
-            <!-- Insecta -->
             <option value="Coleoptera">Coleoptera</option>
             <option value="Lepidoptera">Lepidoptera</option>
             <option value="Diptera">Diptera</option>
