@@ -2,6 +2,8 @@ import UrlParser from "../../routes/url-parser";
 import { loginTemplate } from "../templates/template-creator";
 import loginImage from "../../../public/images/login.png";
 import logoImage from "../../../public/rimbawa-360.png";
+import toastr from "toastr";
+import "toastr/build/toastr.min.css";
 
 const Login = {
   async render() {
@@ -31,7 +33,9 @@ const Login = {
       if (username === "admin" && password === "rimbawa360") {
         window.location.href = "/#/dashboard";
       } else {
-        alert("Login failed. Please check your username and password.");
+        toastr.error("Login gagal, cek ulang username dan password kamu.", "", {
+          timeOut: 3000,
+        });
       }
     });
 
