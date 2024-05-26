@@ -509,13 +509,13 @@ const loginTemplate = () => `
             <h2 class="text-center">Login Admin</h2>
             <form>
               <div class="form-group mb-3">
-                <label for="username">Username</label>
-                <input type="text" class="form-control" id="username" placeholder="Masukkan username" required>
+                <label for="username">Nama Pengguna</label>
+                <input type="text" class="form-control" id="username" placeholder="Masukkan nama pengguna" required>
               </div>
               <div class="form-group mb-3">
-                <label for="password">Password</label>
+                <label for="password">Kata Sandi</label>
                 <div class="input-group">
-                  <input type="password" class="form-control" id="password" placeholder="Masukkan password" required>
+                  <input type="password" class="form-control" id="password" placeholder="Masukkan kata sandi" required>
                   <div class="input-group-append">
                     <div class="input-group-text">
                       <span id="showPasswordIcon" class="fa fa-eye"></span>
