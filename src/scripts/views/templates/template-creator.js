@@ -14,11 +14,19 @@ const dashboardTemplate = () => `
         <a href="/#/spesies" class="btn btn-dashboard btn-lg me-3">Spesies</a>
         <a href="/#/edukasi" class="btn btn-dashboard btn-lg">Edukasi</a>
       </div>
+      <div class="col-12 text-end">
+        <a href="#/logout" class="btn btn-logout">Logout</a>
+      </div>
     </div>
   </div>
 </section>
 `;
 const direktoriTemplate = () => `
+<style>
+body {
+  background-color: #f6f2f2;
+}
+</style>
 <section class="direktori">
    <div class="container mt-4">
         <div class="row">
@@ -42,6 +50,11 @@ const direktoriTemplate = () => `
     </section>
 `;
 const edukasiTemplate = () => `
+<style>
+body {
+  background-color: #f6f2f2;
+}
+</style>
   <section class="edukasi">
    <div class="container mt-4">
         <div class="row">
@@ -64,6 +77,11 @@ const edukasiTemplate = () => `
     </section>
 `;
 const spesiesTemplate = () => `
+<style>
+body {
+  background-color: #f6f2f2;
+}
+</style>
   <section class="spesies-section">
    <div class="container mt-4">
         <div class="row">
@@ -90,12 +108,12 @@ const formDirektoriTemplate = () => `
 <section class="form-direktori">
   <img src="rimbawa-360.png" alt="Logo Rimbawa 360" class="logo">
   <h2>Form Direktori Ekowisata Hutan</h2>
-  <form>
+  <form id="direktoriForm" enctype="multipart/form-data" method="post">
     <div class="form-container">
       <div class="form-column">
         <div class="form-group">
-          <label for="nama">Nama:</label>
-          <input type="text" id="nama" name="nama" required>
+          <label for="nama_tempat">Nama:</label>
+          <input type="text" id="nama_tempat" name="nama_tempat" required>
         </div>
         <div class="form-group">
           <label for="lokasi">Lokasi:</label>
@@ -111,7 +129,7 @@ const formDirektoriTemplate = () => `
         </div>
       </div>
       <div class="form-column">
-      <div class="form-group">
+        <div class="form-group">
           <label for="fasilitas">Fasilitas:</label>
           <input type="text" id="fasilitas" name="fasilitas" required>
         </div>
@@ -129,15 +147,15 @@ const formDirektoriTemplate = () => `
         </div>
         <div class="form-group">
           <label for="gambar">Gambar:</label>
-          <input type="file" id="gambar" name="gambar" accept="image/*" required>
+          <input type="file" id="gambar" name="gambar" accept="image/*">
         </div>
       </div>
     </div>
+    <div class="buttons">
+      <a href="/#/direktori"><button type="button" class="btn-batal">Batal</button></a>
+      <button type="submit" class="btn-simpan">Simpan</button>
+    </div>
   </form>
-  <div class="buttons">
-    <a href="/#/direktori"><button type="button" class="btn-batal">Batal</button></a>
-    <button type="submit" class="btn-simpan">Simpan</button>
-  </div>
 </section>
 `;
 const editFormEdukasiTemplate = () => `
@@ -308,58 +326,59 @@ const formSpesiesTemplate = () => `
 </section>
 `;
 
-const editFormDirektoriTemplate = () => `
+const editFormDirektoriTemplate = (data) => `
 <section class="edit-form-direktori">
   <img src="rimbawa-360.png" alt="Logo Rimbawa 360" class="logo">
   <h2>Edit Form Direktori Ekowisata Hutan</h2>
-  <form>
+  <form id="direktoriForm" enctype="multipart/form-data" method="put">
     <div class="form-container">
       <div class="form-column">
         <div class="form-group">
-          <label for="nama">Nama:</label>
-          <input type="text" id="nama" name="nama" required>
+          <label for="nama_tempat">Nama:</label>
+          <input type="text" id="nama_tempat" name="nama_tempat" value="${data.nama_tempat}" required>
         </div>
         <div class="form-group">
           <label for="lokasi">Lokasi:</label>
-          <input type="text" id="lokasi" name="lokasi" required>
+          <input type="text" id="lokasi" name="lokasi" value="${data.lokasi}" required>
         </div>
         <div class="form-group">
           <label for="deskripsi">Deskripsi:</label>
-          <textarea class="mb-2" id="deskripsi" name="deskripsi" rows="4" required></textarea>
+          <textarea class="mb-2" id="deskripsi" name="deskripsi" rows="4" required>${data.deskripsi}</textarea>
         </div>
         <div class="form-group">
           <label for="aktivitas">Aktivitas:</label>
-          <input type="text" id="aktivitas" name="aktivitas" required>
+          <input type="text" id="aktivitas" name="aktivitas" value="${data.aktivitas}" required>
         </div>
       </div>
       <div class="form-column">
-      <div class="form-group">
+        <div class="form-group">
           <label for="fasilitas">Fasilitas:</label>
-          <input type="text" id="fasilitas" name="fasilitas" required>
+          <input type="text" id="fasilitas" name="fasilitas" value="${data.fasilitas}" required>
         </div>
         <div class="form-group">
           <label for="akses">Akses:</label>
-          <input type="text" id="akses" name="akses" required>
+          <input type="text" id="akses" name="akses" value="${data.akses}" required>
         </div>
         <div class="form-group">
           <label for="latitude">Latitude:</label>
-          <input type="text" id="latitude" name="latitude" required>
+          <input type="text" id="latitude" name="latitude" value="${data.latitude}" required>
         </div>
         <div class="form-group">
           <label for="longitude">Longitude:</label>
-          <input type="text" id="longitude" name="longitude" required>
+          <input type="text" id="longitude" name="longitude" value="${data.longitude}" required>
         </div>
         <div class="form-group">
           <label for="gambar">Gambar:</label>
-          <input type="file" id="gambar" name="gambar" accept="image/*" required>
+          <input type="file" id="gambar" name="gambar" accept="image/*">
+          <span id="file-name">${data.gambar}</span>
         </div>
       </div>
     </div>
+    <div class="buttons">
+      <a href="/#/direktori"><button type="button" class="btn-batal">Batal</button></a>
+      <button type="submit" class="btn-simpan">Simpan</button>
+    </div>
   </form>
-  <div class="buttons">
-    <a href="/#/direktori"><button type="button" class="btn-batal">Batal</button></a>
-    <button type="submit" class="btn-simpan">Simpan</button>
-  </div>
 </section>
 `;
 

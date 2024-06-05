@@ -5,6 +5,18 @@ body {
   overflow-x: hidden;
 }
 
+.btn-logout {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: #004225;
+  text-decoration: underline;
+}
+
+.btn-logout:hover {
+  color: #56ab2e;
+}
+
 .login-section {
   margin-top: 110px;
   padding: 50px 0;
@@ -191,7 +203,7 @@ body {
 
 .form-direktori .btn-batal {
   margin-right: 10px;
-  background-color: #e8eedc;
+  background-color: #f9f9f9;
   border: 1px solid #004225;
   color: #004225;
 }
@@ -199,17 +211,17 @@ body {
 .form-direktori .btn-batal:hover {
   background-color: #004225;
   border: 1px solid #004225;
-  color: #eeeeee;
+  color: #f9f9f9;
 }
 
 .form-direktori .btn-simpan {
   background-color: #004225;
   border: 1px solid #004225;
-  color: #eeeeee;
+  color: #f9f9f9;
 }
 
 .form-direktori .btn-simpan:hover {
-  background-color: #e8eedc;
+  background-color: #f9f9f9;
   border: 1px solid #004225;
   color: #004225;
 }
@@ -270,7 +282,7 @@ body {
 
 .form-edukasi .btn-batal {
   margin-right: 10px;
-  background-color: #e8eedc;
+  background-color: #f9f9f9;
   border: 1px solid #004225;
   color: #004225;
 }
@@ -278,17 +290,17 @@ body {
 .form-edukasi .btn-batal:hover {
   background-color: #004225;
   border: 1px solid #004225;
-  color: #eeeeee;
+  color: #f9f9f9;
 }
 
 .form-edukasi .btn-simpan {
   background-color: #004225;
   border: 1px solid #004225;
-  color: #eeeeee;
+  color: #f9f9f9;
 }
 
 .form-edukasi .btn-simpan:hover {
-  background-color: #e8eedc;
+  background-color: #f9f9f9;
   border: 1px solid #004225;
   color: #004225;
 }
@@ -359,7 +371,7 @@ body {
 
 .form-spesies .btn-batal {
   margin-right: 10px;
-  background-color: #e8eedc;
+  background-color: #f9f9f9;
   border: 1px solid #004225;
   color: #004225;
 }
@@ -367,24 +379,22 @@ body {
 .form-spesies .btn-batal:hover {
   background-color: #004225;
   border: 1px solid #004225;
-  color: #eeeeee;
+  color: #f9f9f9;
 }
 
 .form-spesies .btn-simpan {
   background-color: #004225;
   border: 1px solid #004225;
-  color: #eeeeee;
+  color: #f9f9f9;
 }
 
 .form-spesies .btn-simpan:hover {
-  background-color: #e8eedc;
+  background-color: #f9f9f9;
   border: 1px solid #004225;
   color: #004225;
 }
 
 .direktori {
-  padding: 10px;
-  background-color: #f6f2f2;
   padding-bottom: 30px;
 }
 
@@ -452,7 +462,7 @@ body {
 }
 
 .direktori .btn-tambah:hover {
-  background-color: #e8eedc;
+  background-color: #f6f2f2;
   color: #004225;
   border: 2px solid #004225;
 }
@@ -486,8 +496,6 @@ body {
 }
 
 .edukasi {
-  padding: 10px;
-  background-color: #f6f2f2;
   padding-bottom: 30px;
 }
 
@@ -570,8 +578,6 @@ body {
 }
 
 .spesies-section {
-  padding: 10px;
-  background-color: #f6f2f2;
   padding-bottom: 30px;
 }
 
@@ -639,7 +645,7 @@ body {
 }
 
 .spesies-section .btn-tambah:hover {
-  background-color: #e8eedc;
+  background-color: #f6f2f2;
   color: #004225;
   border: 2px solid #004225;
 }
@@ -736,7 +742,7 @@ body {
 
 .edit-form-direktori .btn-batal {
   margin-right: 10px;
-  background-color: #e8eedc;
+  background-color: #f9f9f9;
   border: 1px solid #004225;
   color: #004225;
 }
@@ -744,17 +750,17 @@ body {
 .edit-form-direktori .btn-batal:hover {
   background-color: #004225;
   border: 1px solid #004225;
-  color: #eeeeee;
+  color: #f9f9f9;
 }
 
 .edit-form-direktori .btn-simpan {
   background-color: #004225;
   border: 1px solid #004225;
-  color: #eeeeee;
+  color: #f9f9f9;
 }
 
 .edit-form-direktori .btn-simpan:hover {
-  background-color: #e8eedc;
+  background-color: #f9f9f9;
   border: 1px solid #004225;
   color: #004225;
 }
@@ -825,7 +831,7 @@ body {
 
 .edit-form-spesies .btn-batal {
   margin-right: 10px;
-  background-color: #e8eedc;
+  background-color: #f9f9f9;
   border: 1px solid #004225;
   color: #004225;
 }
@@ -833,17 +839,17 @@ body {
 .edit-form-spesies .btn-batal:hover {
   background-color: #004225;
   border: 1px solid #004225;
-  color: #eeeeee;
+  color: #f9f9f9;
 }
 
 .edit-form-spesies .btn-simpan {
   background-color: #004225;
   border: 1px solid #004225;
-  color: #eeeeee;
+  color: #f9f9f9;
 }
 
 .edit-form-spesies .btn-simpan:hover {
-  background-color: #e8eedc;
+  background-color: #f9f9f9;
   border: 1px solid #004225;
   color: #004225;
 }

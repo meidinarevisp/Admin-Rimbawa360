@@ -22,7 +22,6 @@
         "Pemandu Wisata",
         "Area Camping"
       ],
-      "link_google_maps": "https://maps.google.com/?q=Taman+Nasional+Gunung+Leuser",
       "gambar": "https://res.cloudinary.com/dwxoqt0ra/image/upload/v1715924187/Taman_Nasional_Gunung_Leuser_ahrhkq.jpg"
     },
     {
@@ -42,7 +41,6 @@
         "Pemandu Wisata",
         "Perahu Wisata"
       ],
-      "link_google_maps": "https://maps.google.com/?q=Taman+Nasional+Ujung+Kulon",
       "gambar": "https://res.cloudinary.com/dwxoqt0ra/image/upload/v1715924361/taman_nasional_ujung_kulon_qrvglh.jpg"
     },
     {
@@ -62,7 +60,6 @@
         "Pemandu Wisata",
         "Perahu Wisata"
       ],
-      "link_google_maps": "https://maps.google.com/?q=Taman+Nasional+Komodo",
       "gambar": "https://res.cloudinary.com/dwxoqt0ra/image/upload/v1715924188/taman_nasional_komodo_linfdm.jpg"
     },
     {
@@ -82,7 +79,6 @@
       ],
       "akses": "Dapat diakses melalui penerbangan ke Wamena, kemudian melanjutkan perjalanan darat dan sungai.",
       "fasilitas": ["Pusat Informasi", "Pemandu Wisata", "Area Camping"],
-      "link_google_maps": "https://maps.google.com/?q=Taman+Nasional+Lorentz",
       "gambar": "https://res.cloudinary.com/dwxoqt0ra/image/upload/v1715924360/Taman_Nasional_Lorentz_xxj6wx.jpg"
     },
     {
@@ -107,7 +103,6 @@
         "Pemandu Wisata",
         "Area Camping"
       ],
-      "link_google_maps": "https://maps.google.com/?q=Taman+Nasional+Bromo+Tengger+Semeru",
       "gambar": "https://res.cloudinary.com/dwxoqt0ra/image/upload/v1715924359/taman_nasional_bromo_emxdnm.jpg"
     },
     {
@@ -123,7 +118,6 @@
         "Pemandu Wisata",
         "Area Camping"
       ],
-      "link_google_maps": "https://maps.google.com/?q=Taman+Nasional+Way+Kambas",
       "gambar": "https://images.pexels.com/photos/358910/pexels-photo-358910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "titik": {
         "latitude": -5.4499,
@@ -148,7 +142,6 @@
         "Pemandu Wisata",
         "Area Camping"
       ],
-      "link_google_maps": "https://maps.google.com/?q=Taman+Nasional+Bukit+Barisan+Selatan",
       "gambar": "https://th.bing.com/th/id/R.6b0746dfb3dbe9cf1f76d698eb574c51?rik=3%2bpHfXb50wJFcA&riu=http%3a%2f%2fwww.travelmarbles.com%2fwp-content%2fuploads%2f2018%2f08%2fbukitbarisan-5-1024x684.jpg&ehk=kEcVv%2b1lzhr95dkTGd9i4g37c10JNuBfa3f3PSiWI6E%3d&risl=&pid=ImgRaw&r=0",
       "titik": {
         "latitude": -4.0965,
@@ -173,7 +166,6 @@
         "Pemandu Wisata",
         "Area Camping"
       ],
-      "link_google_maps": "https://maps.google.com/?q=Taman+Nasional+Gunung+Gede+Pangrango",
       "gambar": "https://i1.wp.com/www.itrip.id/wp-content/uploads/2021/09/Gunung-Gede-Pangrango.jpg",
       "titik": {
         "latitude": -6.775,
@@ -198,7 +190,6 @@
         "Pemandu Wisata",
         "Area Camping"
       ],
-      "link_google_maps": "https://maps.google.com/?q=Taman+Nasional+Kerinci+Seblat",
       "gambar": "https://foresteract.com/wp-content/uploads/2016/05/Taman-nasional-kerinci-seblat.jpg",
       "titik": {
         "latitude": -3.8051,
@@ -218,7 +209,6 @@
         "Pemandu Wisata",
         "Area Camping"
       ],
-      "link_google_maps": "https://maps.google.com/?q=Taman+Nasional+Baluran",
       "gambar": "https://i.pinimg.com/originals/8e/9d/ff/8e9dff2fd6354f3f1c11e4476207850b.jpg",
       "titik": {
         "latitude": -7.8936,
@@ -243,7 +233,6 @@
         "Pemandu Wisata",
         "Area Camping"
       ],
-      "link_google_maps": "https://maps.google.com/?q=Taman+Nasional+Bukit+Tigapuluh",
       "gambar": "https://th.bing.com/th/id/R.a91f344cff614c66bf4c928d11202e8b?rik=9qCBfzj8QDF1AQ&riu=http%3a%2f%2finfocongo.org%2fwp-content%2fuploads%2f2017%2f02%2fistock-497148125.png&ehk=xtieoCrxSV8KTlAMDD4foj%2bdztXc%2bbmXLcADNf4ikJk%3d&risl=&pid=ImgRaw&r=0",
       "titik": {
         "latitude": -0.8141,
@@ -268,7 +257,6 @@
         "Pemandu Wisata",
         "Area Camping"
       ],
-      "link_google_maps": "https://maps.google.com/?q=Taman+Nasional+Danau+Sentarum",
       "gambar": "https://i0.wp.com/rimbakita.com/wp-content/uploads/2019/07/danau-sentarum.jpg",
       "titik": {
         "latitude": 0.2581,
@@ -293,7 +281,6 @@
         "Pemandu Wisata",
         "Area Camping"
       ],
-      "link_google_maps": "https://maps.google.com/?q=Taman+Nasional+Gunung+Rinjani",
       "gambar": "https://www.trekkingrinjani.com/rinjanitrekking/images/gunung-rinjani2.jpg",
       "titik": {
         "latitude": -8.4188,
@@ -318,7 +305,6 @@
         "Pemandu Wisata",
         "Area Camping"
       ],
-      "link_google_maps": "https://maps.google.com/?q=Taman+Nasional+Manusela",
       "gambar": "https://www.celebes.co/maluku/wp-content/uploads/2022/04/Fasilitas-di-Kawasan-Wisata.jpg",
       "titik": {
         "latitude": -3.3245,

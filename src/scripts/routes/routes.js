@@ -16,10 +16,10 @@ const routes = {
   "/edukasi": Edukasi,
   "/spesies": Spesies,
   "/form-direktori": formDirektori,
-  "/edit-form-edukasi": editFormEdukasi,
+  "/edit-form-edukasi/:id": editFormEdukasi,
   "/form-spesies": formSpesies,
-  "/edit-form-spesies": editFormSpesies,
-  "/edit-form-direktori": editFormDirektori,
+  "/edit-form-spesies/:id": editFormSpesies,
+  "/edit-form-direktori/:id": editFormDirektori,
 };
 
 export default routes;
