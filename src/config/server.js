@@ -1,6 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const direktoriRoutes = require("../config/routes/direktori");
+const edukasiRoutes = require("../config/routes/edukasi");
+const spesiesRoutes = require("../config/routes/spesies");
 const cors = require("cors");
 const path = require("path");
 
@@ -8,7 +10,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:5000", // Ganti dengan origin klien Anda
+    origin: "http://localhost:5000",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
   })
@@ -22,6 +24,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/api/direktori", direktoriRoutes);
+app.use("/api/edukasi", edukasiRoutes);
+app.use("/api/spesies", spesiesRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

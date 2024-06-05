@@ -7,12 +7,21 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Dashboard = {
   async render() {
+    if (!localStorage.getItem("isLoggedIn")) {
+      window.location.hash = "#/";
+      return "";
+    }
+
     const urlParams = UrlParser.parseActiveUrlWithoutCombiner();
     const renderedTemplate = dashboardTemplate(urlParams);
     return renderedTemplate;
   },
 
   async afterRender() {
+    if (!localStorage.getItem("isLoggedIn")) {
+      return;
+    }
+
     gsap.to(".background-animate", {
       duration: 1,
       x: "40%",
@@ -42,6 +51,13 @@ const Dashboard = {
       stagger: 0.3,
       delay: 2,
       ease: "power2.out",
+    });
+
+    const logoutButton = document.querySelector(".btn-logout");
+    logoutButton.addEventListener("click", (event) => {
+      event.preventDefault();
+      localStorage.removeItem("isLoggedIn");
+      window.location.hash = "#/";
     });
 
     const buttons = document.querySelectorAll(".btn-dashboard");

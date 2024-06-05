@@ -22,6 +22,32 @@ const createDatabaseAndTable = `
         fasilitas VARCHAR(255) NOT NULL,
         gambar VARCHAR(255) NOT NULL
     );
+
+    CREATE TABLE IF NOT EXISTS edukasi (
+        id INT PRIMARY KEY AUTO_INCREMENT,
+        nama_isu VARCHAR(255) NOT NULL,
+        deskripsi VARCHAR(255) NOT NULL,
+        dampak VARCHAR(255) NOT NULL,
+        solusi VARCHAR(255) NOT NULL,
+        gambar VARCHAR(255) NOT NULL
+    );
+
+    CREATE TABLE IF NOT EXISTS spesies (
+        id INT PRIMARY KEY AUTO_INCREMENT,
+        namaSpesies VARCHAR(255) NOT NULL,
+        deskripsi VARCHAR(255) NOT NULL,
+        kerajaan VARCHAR(255) NOT NULL,
+        kelas VARCHAR(255) NOT NULL,
+        statusKonservasi VARCHAR(255) NOT NULL,
+        ordo VARCHAR(255) NOT NULL,
+        spesies VARCHAR(255) NOT NULL,
+        populasi VARCHAR(255) NOT NULL,
+        rentanganHidup VARCHAR(255) NOT NULL,
+        panjang VARCHAR(255) NOT NULL,
+        berat VARCHAR(255) NOT NULL,
+        kecepatanTertinggi VARCHAR(255) NOT NULL,
+        gambar VARCHAR(255) NOT NULL
+    );
 `;
 
 pool.query(createDatabaseAndTable, (err, results) => {

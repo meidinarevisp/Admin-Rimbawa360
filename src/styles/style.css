@@ -6,15 +6,44 @@ body {
 }
 
 .btn-logout {
-  position: absolute;
-  top: 0;
-  right: 10px;
   color: #004225;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .btn-logout:hover {
   color: #56ab2e;
+}
+
+.offcanvas {
+  margin-top: 80px;
+  width: 200px;
+  height: 300px;
+}
+
+.btn-offcanvas {
+  background-color: #004225;
+  color: #eeeeee;
+  border: 2px solid #004225;
+  border-radius: 5px 0 0 5px;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: -110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-offcanvas:hover {
+  background-color: #56ab2e !important;
+  color: #eeeeee !important;
+  border: 2px solid #56ab2e !important;
+  border-radius: 5px 0 0 5px;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
 }
 
 .login-section {
@@ -552,7 +581,24 @@ body {
   height: auto;
 }
 
-#edukasi .btn-edit {
+.edukasi .btn-tambah {
+  background-color: #004225;
+  color: #eeeeee;
+  border: 2px solid #004225;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+.edukasi .btn-tambah:hover {
+  background-color: #f6f2f2;
+  color: #004225;
+  border: 2px solid #004225;
+}
+
+#edukasi .btn-edit,
+#edukasi .btn-hapus {
   background-color: #004225;
   color: #eeeeee;
   border: 1px solid #e8eedc;
@@ -562,7 +608,8 @@ body {
   font-size: 1.2rem;
 }
 
-#edukasi .btn-edit:hover {
+#edukasi .btn-edit:hover,
+#edukasi .btn-hapus:hover {
   background-color: #e8eedc;
   color: #004225;
 }

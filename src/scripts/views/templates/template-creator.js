@@ -14,9 +14,18 @@ const dashboardTemplate = () => `
         <a href="/#/spesies" class="btn btn-dashboard btn-lg me-3">Spesies</a>
         <a href="/#/edukasi" class="btn btn-dashboard btn-lg">Edukasi</a>
       </div>
-      <div class="col-12 text-end">
+      <button class="btn btn-offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-caret-left"></i></button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel"></h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="col-12 text-end">
         <a href="#/logout" class="btn btn-logout">Logout</a>
       </div>
+  </div>
+</div>
     </div>
   </div>
 </section>
@@ -68,6 +77,7 @@ body {
                         <li><a class="dropdown-item" href="/#/direktori">Direktori Ekowisata Hutan</a></li>
                         <li><a class="dropdown-item" href="/#/spesies">Spesies</a></li>
                     </ul>
+                    <a href="/#/form-edukasi"><button class="btn btn-tambah rounded-circle"><i class="fas fa-plus"></i></button></a>
                 </div>
                 <section id="edukasi" class="mt-4">
                 </section>
@@ -158,14 +168,14 @@ const formDirektoriTemplate = () => `
   </form>
 </section>
 `;
-const editFormEdukasiTemplate = () => `
-  <section class="form-edukasi">
+const formEdukasiTemplate = () => `
+<section class="form-edukasi">
   <img src="rimbawa-360.png" alt="Logo Rimbawa 360" class="logo">
-  <h2>Form Edit Edukasi</h2>
-  <form>
+  <h2>Form Edukasi</h2>
+  <form id="edukasiForm" enctype="multipart/form-data" method="post">
     <div class="form-group">
-      <label for="judul">Judul:</label>
-      <input type="text" id="judul" name="judul" required>
+      <label for="nama_isu">Nama Isu:</label>
+      <input type="text" id="nama_isu" name="nama_isu" required>
     </div>
     <div class="form-group">
       <label for="deskripsi">Deskripsi:</label>
@@ -183,23 +193,56 @@ const editFormEdukasiTemplate = () => `
       <label for="gambar">Gambar:</label>
       <input type="file" id="gambar" name="gambar" accept="image/*" required>
     </div>
-  </form>
-  <div class="buttons">
+    <div class="buttons">
     <a href="/#/edukasi"><button type="button" class="btn-batal">Batal</button></a>
     <button type="submit" class="btn-simpan">Simpan</button>
   </div>
+  </form>
+</section>
+`;
+const editFormEdukasiTemplate = (data) => `
+  <section class="form-edukasi">
+  <img src="rimbawa-360.png" alt="Logo Rimbawa 360" class="logo">
+  <h2>Form Edit Edukasi</h2>
+  <form id="edukasiForm" enctype="multipart/form-data" method="put">
+    <div class="form-group">
+      <label for="nama_isu">Nama Isu:</label>
+      <input type="text" id="nama_isu" name="nama_isu" value="${data.nama_isu}" required>
+    </div>
+    <div class="form-group">
+      <label for="deskripsi">Deskripsi:</label>
+      <textarea id="deskripsi" name="deskripsi" rows="4" required>${data.deskripsi}</textarea>
+    </div>
+    <div class="form-group">
+      <label for="dampak">Dampak:</label>
+      <textarea id="dampak" name="dampak" rows="3" required>${data.dampak}</textarea>
+    </div>
+    <div class="form-group">
+      <label for="solusi">Solusi:</label>
+      <textarea id="solusi" name="solusi" rows="3" required>${data.solusi}</textarea>
+    </div>
+    <div class="form-group">
+      <label for="gambar">Gambar:</label>
+      <input type="file" id="gambar" name="gambar" accept="image/*">
+      <span id="file-name">${data.gambar}</span>
+    </div>
+    <div class="buttons">
+    <a href="/#/edukasi"><button type="button" class="btn-batal">Batal</button></a>
+    <button type="submit" class="btn-simpan">Simpan</button>
+  </div>
+  </form>
 </section>
 `;
 const formSpesiesTemplate = () => `
   <section class="form-spesies">
   <img src="rimbawa-360.png" alt="Logo Rimbawa 360" class="logo">
   <h2>Form Spesies</h2>
-  <form>
+  <form id="spesiesForm" enctype="multipart/form-data" method="put">
     <div class="form-container">
       <div class="form-column">
         <div class="form-group">
-          <label for="nama">Nama:</label>
-          <input type="text" id="nama" name="nama" required>
+          <label for="namaSpesies">Nama:</label>
+          <input type="text" id="namaSpesies" name="namaSpesies" required>
         </div>
         <div class="form-group">
           <label for="deskripsi">Deskripsi:</label>
@@ -209,6 +252,7 @@ const formSpesiesTemplate = () => `
           <label for="kerajaan">Kerajaan:</label>
           <select id="kerajaan" name="kerajaan" required>
             <option value="">Pilih jenis kerajaan</option>
+            <option value="-">-</option>
             <option value="Animalia">Animalia</option>
             <option value="Plantae">Plantae</option>
             <option value="Fungi">Fungi</option>
@@ -221,6 +265,7 @@ const formSpesiesTemplate = () => `
           <label for="kelas">Kelas:</label>
           <select id="kelas" name="kelas" required>
             <option value="">Pilih jenis kelas</option>
+            <option value="-">-</option>
             <option value="Mammalia">Mammalia</option>
             <option value="Aves">Aves</option>
             <option value="Reptilia">Reptilia</option>
@@ -245,9 +290,10 @@ const formSpesiesTemplate = () => `
       </div>
       <div class="form-column">
         <div class="form-group">
-          <label for="status-konservasi">Status Konservasi:</label>
-          <select id="status-konservasi" name="status-konservasi" required>
+          <label for="statusKonservasi">Status Konservasi:</label>
+          <select id="statusKonservasi" name="statusKonservasi" required>
             <option value="">Pilih jenis status konservasi</option>
+            <option value="-">-</option>
             <option value="Punah">Extinct (EX) - Punah</option>
             <option value="Punah di Alam Liar">Extinct in the Wild (EW) - Punah di Alam Liar</option>
             <option value="Kritis">Critically Endangered (CR) - Kritis</option>
@@ -263,6 +309,7 @@ const formSpesiesTemplate = () => `
           <label for="ordo">Ordo:</label>
           <select id="ordo" name="ordo" required>
             <option value="">Pilih jenis ordo</option>
+            <option value="-">-</option>
             <option value="Primates">Primates</option>
             <option value="Carnivora">Carnivora</option>
             <option value="Cetacea">Cetacea</option>
@@ -295,8 +342,8 @@ const formSpesiesTemplate = () => `
           <input type="text" id="populasi" name="populasi" required>
         </div>
         <div class="form-group">
-          <label for="rentangan-hidup">Rentangan Hidup:</label>
-          <input type="text" id="rentangan-hidup" name="rentangan-hidup" required>
+          <label for="rentanganHidup">Rentangan Hidup:</label>
+          <input type="text" id="rentanganHidup" name="rentanganHidup" required>
         </div>
       </div>
       <div class="form-column">
@@ -309,8 +356,8 @@ const formSpesiesTemplate = () => `
           <input type="text" id="berat" name="berat" required>
         </div>
         <div class="form-group">
-          <label for="kecepatan-tertinggi">Kecepatan Tertinggi:</label>
-          <input type="text" id="kecepatan-tertinggi" name="kecepatan-tertinggi" required>
+          <label for="kecepatanTertinggi">Kecepatan Tertinggi:</label>
+          <input type="text" id="kecepatanTertinggi" name="kecepatanTertinggi" required>
         </div>
         <div class="form-group">
           <label for="gambar">Gambar:</label>
@@ -318,11 +365,11 @@ const formSpesiesTemplate = () => `
         </div>
       </div>
     </div>
-  </form>
-  <div class="buttons">
+    <div class="buttons">
     <a href="/#/spesies"><button type="button" class="btn-batal">Batal</button></a>
     <button type="submit" class="btn-simpan">Simpan</button>
   </div>
+  </form>
 </section>
 `;
 
@@ -382,25 +429,26 @@ const editFormDirektoriTemplate = (data) => `
 </section>
 `;
 
-const editFormSpesiesTemplate = () => `
-<section class="edit-form-spesies">
+const editFormSpesiesTemplate = (data) => `
+<section class="form-spesies">
   <img src="rimbawa-360.png" alt="Logo Rimbawa 360" class="logo">
-  <h2>Edit Form Spesies</h2>
-  <form>
+  <h2>Form Spesies</h2>
+  <form id="spesiesForm" enctype="multipart/form-data" method="put">
     <div class="form-container">
       <div class="form-column">
         <div class="form-group">
-          <label for="nama">Nama:</label>
-          <input type="text" id="nama" name="nama" required>
+          <label for="namaSpesies">Nama:</label>
+          <input type="text" id="namaSpesies" name="namaSpesies" value="${data.namaSpesies}" required>
         </div>
         <div class="form-group">
           <label for="deskripsi">Deskripsi:</label>
-          <textarea id="deskripsi" name="deskripsi" rows="4" required></textarea>
+          <textarea id="deskripsi" name="deskripsi" rows="4" required>${data.deskripsi}</textarea>
         </div>
         <div class="form-group">
           <label for="kerajaan">Kerajaan:</label>
           <select id="kerajaan" name="kerajaan" required>
-            <option value="">Pilih jenis kerajaan</option>
+            <option value="${data.kerajaan}">${data.kerajaan}</option>
+            <option value="-">-</option>
             <option value="Animalia">Animalia</option>
             <option value="Plantae">Plantae</option>
             <option value="Fungi">Fungi</option>
@@ -412,7 +460,8 @@ const editFormSpesiesTemplate = () => `
         <div class="form-group">
           <label for="kelas">Kelas:</label>
           <select id="kelas" name="kelas" required>
-            <option value="">Pilih jenis kelas</option>
+            <option value="${data.kelas}">${data.kelas}</option>
+            <option value="-">-</option>
             <option value="Mammalia">Mammalia</option>
             <option value="Aves">Aves</option>
             <option value="Reptilia">Reptilia</option>
@@ -437,9 +486,10 @@ const editFormSpesiesTemplate = () => `
       </div>
       <div class="form-column">
         <div class="form-group">
-          <label for="status-konservasi">Status Konservasi:</label>
-          <select id="status-konservasi" name="status-konservasi" required>
-            <option value="">Pilih jenis status konservasi</option>
+          <label for="statusKonservasi">Status Konservasi:</label>
+          <select id="statusKonservasi" name="statusKonservasi" required>
+            <option value="${data.statusKonservasi}">${data.statusKonservasi}</option>
+            <option value="-">-</option>
             <option value="Punah">Extinct (EX) - Punah</option>
             <option value="Punah di Alam Liar">Extinct in the Wild (EW) - Punah di Alam Liar</option>
             <option value="Kritis">Critically Endangered (CR) - Kritis</option>
@@ -454,7 +504,8 @@ const editFormSpesiesTemplate = () => `
         <div class="form-group">
           <label for="ordo">Ordo:</label>
           <select id="ordo" name="ordo" required>
-            <option value="">Pilih jenis ordo</option>
+            <option value="${data.ordo}">${data.ordo}</option>
+            <option value="-">-</option>
             <option value="Primates">Primates</option>
             <option value="Carnivora">Carnivora</option>
             <option value="Cetacea">Cetacea</option>
@@ -480,41 +531,42 @@ const editFormSpesiesTemplate = () => `
         </div>
         <div class="form-group">
           <label for="spesies">Spesies:</label>
-          <input type="text" id="spesies" name="spesies" required>
+          <input type="text" id="spesies" name="spesies" value="${data.spesies}" required>
         </div>
         <div class="form-group">
           <label for="populasi">Populasi:</label>
-          <input type="text" id="populasi" name="populasi" required>
+          <input type="text" id="populasi" name="populasi" value="${data.populasi}" required>
         </div>
         <div class="form-group">
-          <label for="rentangan-hidup">Rentangan Hidup:</label>
-          <input type="text" id="rentangan-hidup" name="rentangan-hidup" required>
+          <label for="rentanganHidup">Rentangan Hidup:</label>
+          <input type="text" id="rentanganHidup" name="rentanganHidup" value="${data.rentanganHidup}" required>
         </div>
       </div>
       <div class="form-column">
         <div class="form-group">
           <label for="panjang">Panjang:</label>
-          <input type="text" id="panjang" name="panjang" required>
+          <input type="text" id="panjang" name="panjang" value="${data.panjang}" required>
         </div>
         <div class="form-group">
           <label for="berat">Berat:</label>
-          <input type="text" id="berat" name="berat" required>
+          <input type="text" id="berat" name="berat" value="${data.berat}" required>
         </div>
         <div class="form-group">
-          <label for="kecepatan-tertinggi">Kecepatan Tertinggi:</label>
-          <input type="text" id="kecepatan-tertinggi" name="kecepatan-tertinggi" required>
+          <label for="kecepatanTertinggi">Kecepatan Tertinggi:</label>
+          <input type="text" id="kecepatanTertinggi" name="kecepatanTertinggi" value="${data.kecepatanTertinggi}" required>
         </div>
         <div class="form-group">
           <label for="gambar">Gambar:</label>
-          <input type="file" id="gambar" name="gambar" accept="image/*" required>
+          <input type="file" id="gambar" name="gambar" accept="image/*">
+          <span id="file-name">${data.gambar}</span>
         </div>
       </div>
     </div>
-  </form>
-  <div class="buttons">
+    <div class="buttons">
     <a href="/#/spesies"><button type="button" class="btn-batal">Batal</button></a>
     <button type="submit" class="btn-simpan">Simpan</button>
   </div>
+  </form>
 </section>
 `;
 
@@ -560,6 +612,7 @@ export {
   edukasiTemplate,
   spesiesTemplate,
   formDirektoriTemplate,
+  formEdukasiTemplate,
   editFormEdukasiTemplate,
   formSpesiesTemplate,
   editFormDirektoriTemplate,

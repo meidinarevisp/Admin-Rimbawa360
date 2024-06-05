@@ -43,6 +43,7 @@ const Direktori = {
         </div>
       </div>
     `;
+
         direktoriContainer.appendChild(itemElement);
 
         // Add event listener for delete button

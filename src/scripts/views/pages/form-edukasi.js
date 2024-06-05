@@ -1,18 +1,18 @@
 import UrlParser from "../../routes/url-parser";
-import { formSpesiesTemplate } from "../templates/template-creator";
+import { formEdukasiTemplate } from "../templates/template-creator";
 import toastr from "toastr";
 import "toastr/build/toastr.min.css";
 
-const formSpesies = {
+const formEdukasi = {
   async render() {
     const urlParams = UrlParser.parseActiveUrlWithoutCombiner();
-    const renderedTemplate = formSpesiesTemplate(urlParams);
+    const renderedTemplate = formEdukasiTemplate(urlParams);
 
     return renderedTemplate;
   },
 
   async afterRender() {
-    const form = document.getElementById("spesiesForm");
+    const form = document.getElementById("edukasiForm");
 
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
@@ -39,7 +39,7 @@ const formSpesies = {
       }
 
       try {
-        const response = await fetch("http://localhost:3000/api/spesies", {
+        const response = await fetch("http://localhost:3000/api/edukasi", {
           method: "POST",
           body: formData,
           credentials: "include",
@@ -57,7 +57,7 @@ const formSpesies = {
           title: "Success!",
           text: result.message,
         }).then(() => {
-          window.location.href = "/#/spesies"; // Redirect to the directory page
+          window.location.href = "/#/edukasi"; // Redirect to the directory page
         });
       } catch (error) {
         console.error("Error:", error);
@@ -67,4 +67,4 @@ const formSpesies = {
   },
 };
 
-export default formSpesies;
+export default formEdukasi;

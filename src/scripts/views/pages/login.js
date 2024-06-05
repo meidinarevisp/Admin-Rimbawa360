@@ -7,6 +7,12 @@ import "toastr/build/toastr.min.css";
 
 const Login = {
   async render() {
+    // Tambahkan pengecekan ini di awal fungsi render
+    if (localStorage.getItem("isLoggedIn") === "true") {
+      window.location.hash = "#/dashboard";
+      return "";
+    }
+
     const urlParams = UrlParser.parseActiveUrlWithoutCombiner();
     const renderedTemplate = loginTemplate(urlParams);
 
@@ -14,6 +20,11 @@ const Login = {
   },
 
   async afterRender() {
+    // Tambahkan pengecekan ini di awal fungsi afterRender
+    if (localStorage.getItem("isLoggedIn") === "true") {
+      return;
+    }
+
     const imgBackground = document.createElement("img");
     imgBackground.src = loginImage;
     imgBackground.classList.add("login-background");
@@ -31,6 +42,7 @@ const Login = {
       const password = document.getElementById("password").value;
 
       if (username === "admin" && password === "rimbawa360") {
+        localStorage.setItem("isLoggedIn", "true");
         window.location.href = "/#/dashboard";
       } else {
         toastr.error("Login gagal, cek ulang username dan password kamu.", "", {
