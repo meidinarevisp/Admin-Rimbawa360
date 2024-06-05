@@ -53,6 +53,15 @@ const Dashboard = {
       ease: "power2.out",
     });
 
+    gsap.from(".dashboard-section button", {
+      duration: 1,
+      opacity: 0,
+      y: 50,
+      stagger: 0.3,
+      delay: 2,
+      ease: "power2.out",
+    });
+
     const logoutButton = document.querySelector(".btn-logout");
     logoutButton.addEventListener("click", (event) => {
       event.preventDefault();

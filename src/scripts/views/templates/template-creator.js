@@ -14,18 +14,7 @@ const dashboardTemplate = () => `
         <a href="/#/spesies" class="btn btn-dashboard btn-lg me-3">Spesies</a>
         <a href="/#/edukasi" class="btn btn-dashboard btn-lg">Edukasi</a>
       </div>
-      <button class="btn btn-offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-caret-left"></i></button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
-    <h5 id="offcanvasRightLabel"></h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div class="col-12 text-end">
-        <a href="#/logout" class="btn btn-logout">Logout</a>
-      </div>
-  </div>
-</div>
+      <button class="btn-offcanvas"><a href="#/logout" class="btn btn-logout"><i class="fas fa-sign-out-alt"></i></a></button>
     </div>
   </div>
 </section>
@@ -40,7 +29,9 @@ body {
    <div class="container mt-4">
         <div class="row">
             <div class="col-10">
-                <img src="rimbawa-360.png" alt="Logo Rimbawa 360" class="logo" />
+                <a href="/#/dashboard">
+                  <img src="rimbawa-360.png" alt="Logo Rimbawa 360" class="logo">
+                </a>
                 <div class="dropdown d-flex justify-content-between align-items-center">
                     <h1 class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         Direktori Ekowisata Hutan
@@ -68,7 +59,9 @@ body {
    <div class="container mt-4">
         <div class="row">
             <div class="col-10">
-                <img src="rimbawa-360.png" alt="Logo Rimbawa 360" class="logo" />
+                <a href="/#/dashboard">
+                  <img src="rimbawa-360.png" alt="Logo Rimbawa 360" class="logo">
+                </a>
                 <div class="dropdown d-flex justify-content-between align-items-center">
                     <h1 class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         Edukasi
@@ -96,7 +89,9 @@ body {
    <div class="container mt-4">
         <div class="row">
             <div class="col-10">
-                <img src="rimbawa-360.png" alt="Logo Rimbawa 360" class="logo" />
+                <a href="/#/dashboard">
+                  <img src="rimbawa-360.png" alt="Logo Rimbawa 360" class="logo">
+                </a>
                 <div class="dropdown d-flex justify-content-between align-items-center">
                     <h1 class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         Spesies

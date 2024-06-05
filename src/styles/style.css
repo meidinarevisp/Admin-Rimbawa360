@@ -5,40 +5,36 @@ body {
   overflow-x: hidden;
 }
 
-.btn-logout {
-  color: #004225;
-  text-decoration: none;
-}
-
-.btn-logout:hover {
-  color: #56ab2e;
-}
-
-.offcanvas {
-  margin-top: 80px;
-  width: 200px;
-  height: 300px;
-}
-
 .btn-offcanvas {
   background-color: #004225;
-  color: #eeeeee;
   border: 2px solid #004225;
   border-radius: 5px 0 0 5px;
   width: 50px;
   height: 50px;
-  font-size: 2rem;
   position: absolute;
-  top: 0;
+  bottom: -10px;
   right: -110px;
+  display: flex; /* Tambahkan */
+  justify-content: center; /* Tambahkan */
+  align-items: center;
+}
+
+.btn-offcanvas a {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.8rem;
+  width: 100%;
+  height: 100%;
+  color: #eeeeee !important;
+  padding-bottom: 25px !important;
+  padding-left: 15px;
+  text-decoration: none;
+  border: none;
 }
 
 .btn-offcanvas:hover {
   background-color: #56ab2e !important;
-  color: #eeeeee !important;
   border: 2px solid #56ab2e !important;
   border-radius: 5px 0 0 5px;
   width: 50px;
@@ -114,6 +110,10 @@ body {
 .fa-eye-slash {
   font-size: 1.5rem;
   color: #858383;
+}
+
+.btn-logo {
+  cursor: pointer;
 }
 
 .dashboard-section {
@@ -425,11 +425,13 @@ body {
 
 .direktori {
   padding-bottom: 30px;
+  padding-top: 12px;
 }
 
 .direktori h1 {
   margin-left: 200px;
   font-size: 2.5rem;
+  cursor: pointer;
 }
 
 .direktori .dropdown-menu {
@@ -526,11 +528,13 @@ body {
 
 .edukasi {
   padding-bottom: 30px;
+  padding-top: 12px;
 }
 
 .edukasi h1 {
   margin-left: 200px;
   font-size: 2.5rem;
+  cursor: pointer;
 }
 
 .edukasi .dropdown-menu {
@@ -626,11 +630,13 @@ body {
 
 .spesies-section {
   padding-bottom: 30px;
+  padding-top: 12px;
 }
 
 .spesies-section h1 {
   margin-left: 200px;
   font-size: 2.5rem;
+  cursor: pointer;
 }
 
 .spesies-section .dropdown-menu {
